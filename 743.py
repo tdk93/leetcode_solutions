@@ -15,16 +15,12 @@ class Neighbour:
 
 
 class Graph:
-    def __init__(self, adj, source_node: int):
+    def __init__(self, adj):
         self.adjacency_list = adj
         self.graph_size = len(adj)
         self.visited = set()
         self.min_distance = {}
         self.heap = []
-        #heapq.heappush(self.heap,HeapNode((source_node,-1)))
-        #heapq.heappush(self.heap,HeapNode((source_node,1)))
-
-
 
     def shortest_path(self,source_node):
         current_node = source_node
@@ -65,7 +61,7 @@ class Solution:
         
         
 
-        graph = Graph(adj, k)
+        graph = Graph(adj)
         graph.shortest_path(k)
         return graph.min_dist()
 
