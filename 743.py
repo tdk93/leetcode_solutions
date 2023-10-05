@@ -22,8 +22,6 @@ class Graph:
         self.min_distance = {}
         self.heap = []
 
-
-
     def shortest_path(self,source_node):
         current_node = source_node
         self.min_distance[current_node] = 0
