@@ -21,14 +21,6 @@ class Solution:
                 answer.append(0)
             else:
                 answer.append(max_till_here_list[index-1])
-        
-
-
-
-        print(tupled_items)
-        print(max_till_here_list)
-        print(queries)
-        print(answer)
 
 
 class TestCase:
